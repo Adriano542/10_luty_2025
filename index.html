@@ -19,7 +19,11 @@
   */
 
   function poleTrapezu(a, b, h){
-    return 0.5*(a+b)*h
+    return ((a + b) / 2) * h
+
+    var a = prompt("Podaj długość pierwszej podstawy trapezu (a):");
+    var b = prompt("Podaj długość drugiej podstawy trapezu (b):");
+    var h = prompt("Podaj wysokość trapezu (h):");
   }
   document.write(poleTrapezu(prompt('Podaj a'), + ('Podaj b'), + ('Podaj h') ))
   </script>
