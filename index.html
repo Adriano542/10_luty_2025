@@ -12,8 +12,11 @@
   <script>
     function writeName(imie, powitanie)
     {
+      const tekst = '<p>${invite} ${userName} </p>'
+      return tekst
       document.write (powitanie + "" + imie)
     }
+    document.write(tekst)
     document.write(writeName('Siema', 'Globel'))
   </script>
   <footer>
