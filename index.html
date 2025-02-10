@@ -9,16 +9,15 @@
   <script src='main.js'></script>
 </head>
 <body>
+
   <script>
-    function writeName(imie, powitanie)
-    {
-      const tekst = '<p>${invite} ${userName} </p>'
-      return tekst
-      document.write (powitanie + "" + imie)
+    function writeName(imie, powitanie){
+      document.write(imie + " " + powitanie)
     }
-    document.write(tekst)
-    document.write(writeName('Siema', 'Globel'))
+    document.write(writeName(prompt('podaj imie'), prompt('Podaj sposób przywitania')))
+    //funkcja która przyjmuje jako argumenty (powitanie, imie) to co wprowadzi użytkownik w wyskakującym okienku, wykorzystaj prompt, użytkownik ma wybrać jak się program ma przywi
   </script>
+
   <footer>
     <p>10 luty 2025</p>
   </footer>
