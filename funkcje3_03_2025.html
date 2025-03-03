@@ -9,12 +9,12 @@
 </head>
 <body>
 
-  <script src='main.js'>
+  <script>
   function circleArea(){
-    var r = parseFloat(prompt('podaj promień:'));
-    var result = 2 * Math.PI * r;
+    var r = parseFloat(prompt('Podaj promień:'));
+    var result = Math.PI * Math.pow(r, 2);
 
-  document.write('<p>Pole koła o promieniu: ' + r + 'wynosi: ' + result + '. </p>');
+    document.write('<p>Pole koła o promieniu ' + r + ' wynosi ' + result + '.</p>');
   }
   
   circleArea();
