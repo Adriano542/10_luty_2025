@@ -1,3 +1,5 @@
+<!-- FUNKCJA OBLICZAJĄCA POLE KOŁA PO PODANIU PROMIENIA-->
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,10 +23,9 @@
   </script>
 </body>
 </html>
+-->
 
 
-
-<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,16 +36,17 @@
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-  <script>
-    function circleArea() {
-      var r = parseFloat(prompt('Podaj promień:'));
-      var area = Math.PI * Math.pow(r, 2);
-      document.write('<p>Pole koła o promieniu: ' + r + ' wynosi: ' + area + '.</p>');
-    }
 
-    // Wywołanie funkcji circleArea
-    circleArea();
+  <script>
+  function poleProstokata(a=1, b=1){
+    var area = a*b;
+
+    document.write('<p>Pole prostokąta o bokach: ' + a + ' i ' + b + ' wynosi: ' + area + '.</p>');
+  }
+  var a = parseFloat(prompt('Podaj długość boku a:'));
+  var b = parseFloat(prompt('Podaj długość boku b:'));
+
+  poleProstokata(a, b);
   </script>
 </body>
 </html>
--->
